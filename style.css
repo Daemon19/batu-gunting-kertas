@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffb82b5b;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.5rem;
+    font-family: "Roboto Slab", serif;
+}
+
+.pemenang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #ffb82b52;
+    border: 3px dashed #ffb82bbe;
+    border-radius: 10px;
+}
+
+#ronde {
+    font-size: 2.25rem;
+}
+
+.pilihan {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kotak {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    width: 30%;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #ffb82b86;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 3px 7px 10px #ffb82b;
+}
+
+.kotak:hover {
+    background-color: #ffb82bb4;
+}
+
+.kotak:active {
+    background-color: #ffb82b;
+    transform: scale(0.95);
+}
+
+/* Reponsive */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
